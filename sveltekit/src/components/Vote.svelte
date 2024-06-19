@@ -1,24 +1,18 @@
 <script>
+// @ts-nocheck
+
     import { daoContract } from '../stores';
-    // @ts-ignore
     let contract;
     daoContract.subscribe(value => {
         contract = value;
     });
 
-    // @ts-ignore
-    /**
-   * @type {any}
-   */
     let proposalId;
-    // @ts-ignore
     let vote; // true for yes, false for no
 
     const castVote = async () => {
-        // @ts-ignore
         if (contract) {
             try {
-                // @ts-ignore
                 const tx = await contract.vote(proposalId, vote);
                 await tx.wait();
                 alert('Vote cast successfully');
@@ -47,7 +41,7 @@
                 <p>No</p>
             </label>
         </div>
-        <button type="button" class="btn variant-filled" on:click={castVote}>
+        <button class="btn variant-filled" on:click={castVote}>
             Cast Vote
         </button>
     </div>

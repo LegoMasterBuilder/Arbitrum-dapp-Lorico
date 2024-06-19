@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SvelteKit</title>
+    <link href="./_app/immutable/assets/0.BDlB4Ugw.css" rel="stylesheet" />
+    <link href="./_app/immutable/assets/2.BoNok3jQ.css" rel="stylesheet" />
+    <link rel="modulepreload" href="./_app/immutable/entry/start.JrbBRt1d.js" />
+    <link
+      rel="modulepreload"
+      href="./_app/immutable/chunks/entry.CupbeXnd.js"
+    />
+    <link
+      rel="modulepreload"
+      href="./_app/immutable/chunks/scheduler.CtbWrGNo.js"
+    />
+    <link
+      rel="modulepreload"
+      href="./_app/immutable/chunks/index.BjqbIcNX.js"
+    />
+    <link rel="modulepreload" href="./_app/immutable/entry/app.Cdztl9ZW.js" />
+    <link
+      rel="modulepreload"
+      href="./_app/immutable/chunks/index.Cyd1-Rh9.js"
+    />
+    <link rel="modulepreload" href="./_app/immutable/nodes/0.YFiU41DS.js" />
+    <link rel="modulepreload" href="./_app/immutable/nodes/2.0XxcAk_u.js" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body data-sveltekit-preload-data="hover" data-theme="crimson">
+    <div class="contents">
+      <main class="svelte-18d4fpq">
+        <div class="p-10" data-svelte-h="svelte-1u9japi">
+          <h1 class="font-semibold h1">
+            <span
+              class="bg-clip-text bg-gradient-to-br box-decoration-clone from-pink-500 text-transparent to-violet-500"
+              >Svelte DAO on Arbitrum</span
+            >
+          </h1>
+        </div>
+        <div class="flex items-center justify-center py-2">
+          <div class="card flex flex-col gap-2 p-4 w-3/5">
+            <button class="btn variant-filled" data-svelte-h="svelte-bcxwpo">
+              Connect Wallet
+            </button>
+            <p>Status: Not connected</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center py-2">
+          <div class="card flex flex-col gap-2 p-4 w-3/5">
+            <h4 class="h4" data-svelte-h="svelte-1e6b4c3">Create Proposal</h4>
+            <label class="label"
+              ><span data-svelte-h="svelte-7ccxmo">Title</span>
+              <input class="input" type="text" placeholder="Title"
+            /></label>
+            <label class="label"
+              ><span data-svelte-h="svelte-rmspr8">Description</span>
+              <textarea
+                class="textarea"
+                rows="4"
+                placeholder="Description"
+              ></textarea>
+            </label>
+            <button class="btn variant-filled" data-svelte-h="svelte-1i1iwgr">
+              Submit Proposal
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center justify-center py-2">
+          <div class="card flex flex-col gap-2 p-4 w-3/5">
+            <h4 class="h4" data-svelte-h="svelte-19ybxxq">Vote on Proposal</h4>
+            <label class="label"
+              ><span data-svelte-h="svelte-7ccxmo">Title</span>
+              <input class="input" type="number" placeholder="Proposal ID"
+            /></label>
+            <div class="space-y-2">
+              <label class="flex items-center space-x-2"
+                ><input type="radio" name="vote" value="yes" />
+                <p data-svelte-h="svelte-1wwlnrb">Yes</p></label
+              >
+              <label class="flex items-center space-x-2"
+                ><input type="radio" name="vote" value="no" />
+                <p data-svelte-h="svelte-8xe5xx">No</p></label
+              >
+            </div>
+            <button class="btn variant-filled" data-svelte-h="svelte-8mvr79">
+              Cast Vote
+            </button>
+          </div>
+        </div>
+      </main>
+      <script>
+        {
+          __sveltekit_9zv66p = {
+            base: new URL(".", location).pathname.slice(0, -1),
+          };
+          const t = document.currentScript.parentElement,
+            e = [null, null];
+          Promise.all([
+            import("./_app/immutable/entry/start.JrbBRt1d.js"),
+            import("./_app/immutable/entry/app.Cdztl9ZW.js"),
+          ]).then(([l, n]) => {
+            l.start(n, t, {
+              node_ids: [0, 2],
+              data: e,
+              form: null,
+              error: null,
+            });
+          });
+        }
+      </script>
+    </div>
+  </body>
+</html>

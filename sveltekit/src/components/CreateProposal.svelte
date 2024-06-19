@@ -1,9 +1,8 @@
 <script>
+// @ts-nocheck
+
     import { daoContract } from '../stores';
     import { ethers } from 'ethers';
-    /**
-   * @type {{ createProposal: (arg0: string, arg1: string) => any; } | null}
-   */
     let contract;
     daoContract.subscribe(value => {
         contract = value;
@@ -37,7 +36,7 @@
             <span>Description</span>
             <textarea class="textarea" rows="4" placeholder="Description" bind:value={description}></textarea>
         </label>
-        <button type="button" class="btn variant-filled" on:click={createProposal}>
+        <button class="btn variant-filled" on:click={createProposal}>
             Submit Proposal
         </button>
     </div>
